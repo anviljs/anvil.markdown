@@ -2,7 +2,7 @@
   "name": "anvil.markdown",
   "author": "Mike Hostetler <mike.hostetler@gmail.com> (http://mike-hostetler.com)",
   "description": "Markdown compiler plugin for anvil.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
 	"contributors": [{
 		"name": "Alex Robson",
 		"email":	"alex@sharplearningcurve.com"
