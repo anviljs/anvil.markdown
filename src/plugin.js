@@ -1,6 +1,9 @@
-var markdown = require( "github-flavored-markdown" );
+var marked = require( "./marked" );
+var showdown = require( "./showdown" );
 
 var markdownCompilerFactory = function( _, anvil ) {
+	var compile = _.compose( marked, showdown );
+
 	return anvil.plugin( {
 		name: "anvil.markdown",
 		
@@ -11,8 +14,8 @@ var markdownCompilerFactory = function( _, anvil ) {
 
 		compile: function( content, done ) {
 			try {
-				var compile = markdown.parse( content );
-				done( compile );
+				var compiled = compile( content );
+				done( compiled );
 			} catch ( error ) {
 				done( "", error );
 			}
