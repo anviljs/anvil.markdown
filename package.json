@@ -21,6 +21,7 @@
   },
   "devDependencies": { 
 		"anvil.js": ">=0.8.4",
+		"anvil.mocha": "",
 		"underscore": ">=1.0.0",
 		"should": "~1.1",
     "marked": "",
