@@ -2,7 +2,7 @@
   "name": "anvil.markdown",
   "author": "Mike Hostetler <mike.hostetler@gmail.com> (http://mike-hostetler.com)",
   "description": "Markdown compiler plugin for anvil.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "contributors": [
     { "name": "Alex Robson", "email": "alex@sharplearningcurve.com" },
     { "name": "Eli Perelman", "email": "eli@eliperelman.com"}
@@ -19,6 +19,11 @@
     "marked": "",
     "showdown": ""
   },
-  "devDependencies": { "anvil.js" : "~0.8"},
-  "optionalDependencies": {}
+  "devDependencies": { 
+		"anvil.js": ">=0.8.4",
+		"underscore": ">=1.0.0",
+		"should": "~1.1",
+    "marked": "",
+    "showdown": ""
+	}
 }
